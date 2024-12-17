@@ -1,4 +1,4 @@
-#include "triangle.h"
+#include "Triangle.h"
 #include "test_util.h"
 
 int main() {
