@@ -8,6 +8,11 @@ Triangle::Triangle() : a(0), b(0), c(0) {}
 //Parameterized constructor
 Triangle::Triangle(double a, double b, double c) : a(a), b(b), c(c) {}
 
+//Private helper method to check the Triangle Inequality Theorem
+bool Triangle::isValid(double a, double b, double c) const {
+    return (a + b > c) && (a + c > b) && (b + c > a);
+}
+
 //Setter for the sides
 void Triangle::setSides(double a, double b, double c) {
     if (isValid(a, b, c)) {
@@ -38,7 +43,3 @@ void Triangle::print() const {
     cout << "Area: " << area() << endl;
 }
 
-//Private helper method to check the Triangle Inequality Theorem
-bool Triangle::isValid(double a, double b, double c) const {
-    return (a + b > c) && (a + c > b) && (b + c > a);
-}

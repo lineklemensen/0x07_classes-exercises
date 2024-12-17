@@ -2,7 +2,6 @@
 #include "test_util.h"
 
 #include <iostream>
-#include <stdexcept>
 
 using namespace std;
 
@@ -50,7 +49,6 @@ int main() {
     Triangle t3(1, 2, 3);
     cout << "Triangle t3: " << endl;
     t3.print();
-    cout << "Is valid: " << (t3.isValid() ? "Yes" : "No") << endl;
     cout << endl;
   } catch(const invalid_argument& e) {
     cerr << e.what() << endl;
@@ -60,8 +58,7 @@ int main() {
   {
     Triangle t4(1, 10, 12);
     cout << "Triangle t4: " << endl;
-    time4.print();
-    cout << "Is valid: " << (t4.isValid() ? "Yes" : "No") << endl;
+    t4.print();
     cout << endl;
   }
   catch(const invalid_argument& e)
