@@ -18,7 +18,10 @@ class Triangle {
         Triangle(double a, double b, double c);
 
         //Setter for the sides
-        void Triangle::setSides(double a, double b, double c);
+        void setSides(double a, double b, double c);
+
+        //Function to calculate the circumference of the triangle
+        double circumference() const;
 };
 
 #endif //TRIANGLE_H

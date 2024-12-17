@@ -14,3 +14,8 @@ void Triangle::setSides(double a, double b, double c) {
     this->b = b;
     this->c = c;
 }
+
+//Function to calculate the circumference of the triangle
+double Triangle::circumference() const {
+    return a + b + c;
+}
