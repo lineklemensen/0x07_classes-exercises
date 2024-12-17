@@ -16,6 +16,9 @@ class Triangle {
 
         //Parameterized constructor
         Triangle(double a, double b, double c);
+
+        //Setter for the sides
+        void Triangle::setSides(double a, double b, double c);
 };
 
 #endif //TRIANGLE_H
