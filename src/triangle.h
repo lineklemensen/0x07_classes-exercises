@@ -11,6 +11,9 @@ class Triangle {
     public:
         //Default constructor
         Triangle();
+
+        //Parameterized constructor
+        Triangle(double a, double b, double c);
 }
 
 #endif //TRIANGLE_H
