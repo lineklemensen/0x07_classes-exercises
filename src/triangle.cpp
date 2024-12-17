@@ -28,3 +28,10 @@ double Triangle::area() const {
     double s = circumference() / 2; 
     return sqrt(s * (s - a) * (s - b) * (s - c));
 }
+
+//Function to print the details of the triangle
+void Triangle::print() const {
+    cout << "Triangle sides: " << a << ", " << b << ", " << c << endl;
+    cout << "Circunference: " << circumference() << endl;
+    cout << "Area: " << area() << endl;
+}

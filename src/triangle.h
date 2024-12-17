@@ -25,6 +25,9 @@ class Triangle {
 
         //Area function
         double area() const;
+
+        //Function to print the details of the triangle
+        void print() const;
 };
 
 #endif //TRIANGLE_H
