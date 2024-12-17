@@ -10,9 +10,13 @@ Triangle::Triangle(double a, double b, double c) : a(a), b(b), c(c) {}
 
 //Setter for the sides
 void Triangle::setSides(double a, double b, double c) {
-    this->a = a;
-    this->b = b;
-    this->c = c;
+    if (isValid(a, b, c)) {
+        this->a = a;
+        this->b = b;
+        this->c = c;
+    } else {
+        throw invalid_argument("Invalid triangle sides: " + to_string(a) + ", " + to_string(b) + ", " + to_string(c));
+    }
 }
 
 //Function to calculate the circumference of the triangle

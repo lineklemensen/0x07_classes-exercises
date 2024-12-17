@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <stdexept>
 
 using namespace std;
 
