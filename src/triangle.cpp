@@ -1,7 +1,5 @@
 #include "Triangle.h"
 
-#include <cmath>
-
 using namespace std;
 
 //Default constructor
@@ -34,4 +32,9 @@ void Triangle::print() const {
     cout << "Triangle sides: " << a << ", " << b << ", " << c << endl;
     cout << "Circunference: " << circumference() << endl;
     cout << "Area: " << area() << endl;
+}
+
+//Private helper method to check the Triangle Inequality Theorem
+bool Triangle::isValid(double a, double b, double c) const {
+    return (a + b > c) && (a + c > b) && (b + c > a);
 }

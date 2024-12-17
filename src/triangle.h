@@ -1,7 +1,8 @@
-#ifndef TRIANGLE:H
+#ifndef TRIANGLE_H
 #define TRIANGLE_H
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -9,6 +10,9 @@ class Triangle {
     private:
         //Data member, representing the sides of the triangle
         double a, b, c;
+
+        //Helper method to check the Triangle Inequality Theorem
+        bool isValid(double a, double b, double c) const;
 
     public:
         //Default constructor
