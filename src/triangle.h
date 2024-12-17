@@ -7,6 +7,8 @@ using namespace std;
 
 class Triangle {
     private:
+        //Data member, representing the sides of the triangle
+        double a, b, c;
 
     public:
         //Default constructor
@@ -14,6 +16,6 @@ class Triangle {
 
         //Parameterized constructor
         Triangle(double a, double b, double c);
-}
+};
 
 #endif //TRIANGLE_H
