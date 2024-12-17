@@ -22,6 +22,9 @@ class Triangle {
 
         //Function to calculate the circumference of the triangle
         double circumference() const;
+
+        //Area function
+        double area() const;
 };
 
 #endif //TRIANGLE_H

@@ -1,5 +1,7 @@
 #include "Triangle.h"
 
+#include <cmath>
+
 using namespace std;
 
 //Default constructor
@@ -18,4 +20,11 @@ void Triangle::setSides(double a, double b, double c) {
 //Function to calculate the circumference of the triangle
 double Triangle::circumference() const {
     return a + b + c;
+}
+
+//Area function
+double Triangle::area() const {
+    //Semi-perimeter
+    double s = circumference() / 2; 
+    return sqrt(s * (s - a) * (s - b) * (s - c));
 }
